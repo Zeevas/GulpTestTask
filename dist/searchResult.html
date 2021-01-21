@@ -5,17 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <title>Search results</title>
 </head>
 <body>
         <div>
-            <header class="header">
-    <div class="wrapper1">
-    <div class="logo">
+            <div class="wrapper">
+<header class="header">
+    
+    <a href="index.html" class="logo">
         <img src="img/logo.svg">
         <p>All.ca</p>
+    </a>
+    <div class="header__burger">
+        <span></span>
     </div>
-    <div class="nav">
+   
+    <div class="navig">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="#CAregistration">.CA Registration</a></li>
@@ -23,23 +29,37 @@
             <li><a href="#tld">TLDs</a></li>
             <li><a href="#support">Support</a></li>
             <li><a href="#about">About</a></li>
-            <div class="dropdown-content">Coming soon...</div>
+            
         </ul> 
+        <div class="signreg">
+        <button class="button button1"> Sign in / Register</button>
+        
     </div>
-    <div >
-        <button class="button" type="button"> Sign in / Register</button>
-        <div class="dropdown-content">Coming soon...</div>
     </div>
-</div>
+    
 </header>
-            <zcontent class="content1">
+
+    
+</div>
+<nav class="header__menu">
+        <ul class="header__list">
+            <li><a class="header__link" href="index.html">Home</a></li>
+            <li><a class="header__link" href="#CAregistration">.CA Registration</a></li>
+            <li><a class="header__link" href="#transfers">Transfers</a></li>
+            <li><a class="header__link" href="#tld">TLDs</a></li>
+            <li><a class="header__link" href="#support">Support</a></li>
+            <li><a class="header__link" href="#about">About</a></li>
+            
+        </ul> 
+    </nav>
+            <div class="content1">
     <div class="wrapper">
         <div class="searchbar">
-            <div class="sb" ><input type="text"  placeholder="Start here by typing a domain name or a keyword">
-                <a href="searchResult.html"><button>
+            <div class="sb" ><input type="text"  placeholder="Epik Design" width="570" height="60">
+                <a href="searchResult.html">
                     <img src="img/search1.svg" alt=""> 
                     SEARCH
-                </button></a>
+                </a>
             </div>
         </div>
         <div class="searchbody">
@@ -53,6 +73,7 @@
                             <option value="">3</option>
                         </select>
                     </div>
+                    <div class="block1_sec1">
                     <h3>ADDED ON</h3>
                       <div class="select">
                         <select name="placeholdereriod" id="">
@@ -61,18 +82,27 @@
                             <option value="">3</option>
                         </select>
                     </div>
-                    <h3>Price</h3>
-                    <div class="price">
-                        <select class="selectMin" name="price" id="">
-                            <option value="">2</option>
-                            <option value="">3</option>
-                        </select>
-                        <h3>to</h3>
-                        <select class="selectMin" name="price" id="">
-                            <option value="">100</option>
-                            <option value="">150</option>
-                        </select>
                     </div>
+                    <div class="price">
+                        <h3>Price</h3>
+                        <div class="price_sec1">
+                            <div class="selectMin">
+                                <select  name="price" id="" >
+                                    <option value="">$2</option>
+                                    <option value="">$3</option>
+                                </select>
+                            </div>
+                        
+                        <h3>to</h3>
+                        <div class="select2">
+                            <select  name="price" id="">
+                                <option value="">$10000+</option>
+                                <option value="">$15000+</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+                </div>
                     <form>
     
     <div class="slidecontainer" data-role="rangeslider">
@@ -87,15 +117,23 @@
                     <div class="numchar">
                         <h3>Number of characters</h3>
                     <div class="price">
-                        <select class="selectMin" name="price" id="">
+                        <div class="price_sec2">
+                            <div class="selectMin">
+                            <select  name="price" id="">
                             <option value="">2</option>
                             <option value="">100</option>
-                        </select>
+                            </select>
+                        </div>
+                        
                         <h3>to</h3>
-                        <select class="selectMin" name="price" id="">
+                        <div class="selectMin">
+                            <select  name="price" id="">
                             <option value="">90</option>
                             <option value="">100</option>
-                        </select>
+                            </select>
+                        </div></div>
+                        
+                        
                     </div>
                     <form>
     
@@ -108,17 +146,22 @@
                     </div>
                     <div class="numwor">
                         <h3>Number of words</h3>
-                    <div class="price">
-                        <select class="selectMin" name="price" id="">
-                            <option value="">1</option>
-                            <option value="">10</option>
-                        </select>
-                        <h3>to</h3>
-                        <select class="selectMin" name="price" id="">
-                            <option value="">10</option>
-                            <option value="">11</option>
-                        </select>
-                    </div>
+                        <div class="price">
+                            <div class="price_sec2">
+                                <div class="selectMin">
+                                <select  name="price" id="">
+                                <option value="">2</option>
+                                <option value="">100</option>
+                                </select>
+                            </div>
+                            
+                            <h3>to</h3>
+                            <div class="selectMin">
+                                <select  name="price" id="">
+                                <option value="">90</option>
+                                <option value="">100</option>
+                                </select>
+                            </div></div>
                     <form>
     
     <div class="slidecontainer" data-role="rangeslider">
@@ -127,6 +170,7 @@
     </div>
 </form>
 
+                    <div class="numwor_sec1">
                     <h3>Special Characters</h3>
                     <div class="select">
                         <select name="allcategories" id="">
@@ -136,18 +180,20 @@
                         </select>
                     </div>
                     </div>
+                </div>
                     <hr>
                 </div>
                 <div class="block3">
                     <h3>TOP LEVEL TLDS</h3>
                     <div class="select">
                         <select name="allcategories" id="">
-                            <option value="">All Top TLDs</option>
+                            <option value="">All TLDs</option>
                             <option value="">2</option>
                             <option value="">3</option>
                         </select>
                     </div>
-                    <h3>GTLDS</h3>
+                    <div class="gtlds">
+                        <h3>GTLDS</h3>
                     <div class="select">
                         <select name="allcategories" id="">
                             <option value="">All gTLDs</option>
@@ -155,7 +201,9 @@
                             <option value="">3</option>
                         </select>
                     </div>
-                    <h3>CCTLD</h3>
+                    </div>
+                    <div class="ccltd">
+                        <h3>CCTLD</h3>
                     <div class="select">
                         <select name="allcategories" id="">
                             <option value="">All ccTLDs</option>
@@ -163,10 +211,15 @@
                             <option value="">3</option>
                         </select>
                     </div>
+                    </div>
+                    
                     <button>Reset filter</button>
                 </div>
             </div>
-            <div class="searchcont">
+            
+           
+        </div>
+        <div class="searchcont">
                 <div class="title"><h1>SEARCH RESULTS</h1>
                     <div class="line"><hr class="underlined"><hr>
                     </div>
@@ -183,86 +236,80 @@
                         <div class="domainname">epikdesign.co</div>
                         <div class="domainprice">
                             <h2>$2,99</h2>
-                            <button>Add to cart</button>
+                            <button>Add to Cart</button>
                         </div>
                     </div>
                     <div class="domainsection">
                         <div class="domainname">epikdesign.co</div>
                         <div class="domainprice">
                             <h2>$2,99</h2>
-                            <button>Add to cart</button>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="domainsection">
+                        <div class="domainname">epikdesign.co</div>
+                        <div class="domainprice">
+                            <h2>$2,99</h2>
+                            <button>Add to Cart</button>
                         </div>
                     </div>
                     <div class="domainsection">
                         <div class="domainname">epikdesign.co</div>
                         <div class="domainprice">
                             <h2>$2,99</h2>
-                            <button>Add to cart</button>
+                            <button>Add to Cart</button>
                         </div>
                     </div>
                     <div class="domainsection">
                         <div class="domainname">epikdesign.co</div>
                         <div class="domainprice">
                             <h2>$2,99</h2>
-                            <button>Add to cart</button>
+                            <button>Add to Cart</button>
                         </div>
                     </div>
                     <div class="domainsection">
                         <div class="domainname">epikdesign.co</div>
                         <div class="domainprice">
                             <h2>$2,99</h2>
-                            <button>Add to cart</button>
+                            <button>Add to Cart</button>
                         </div>
                     </div>
                     <div class="domainsection">
                         <div class="domainname">epikdesign.co</div>
                         <div class="domainprice">
                             <h2>$2,99</h2>
-                            <button>Add to cart</button>
+                            <button>Add to Cart</button>
                         </div>
                     </div>
                     <div class="domainsection">
                         <div class="domainname">epikdesign.co</div>
                         <div class="domainprice">
                             <h2>$2,99</h2>
-                            <button>Add to cart</button>
+                            <button>Add to Cart</button>
                         </div>
                     </div>
                     <div class="domainsection">
                         <div class="domainname">epikdesign.co</div>
                         <div class="domainprice">
                             <h2>$2,99</h2>
-                            <button>Add to cart</button>
+                            <button>Add to Cart</button>
                         </div>
                     </div>
                     <div class="domainsection">
                         <div class="domainname">epikdesign.co</div>
                         <div class="domainprice">
                             <h2>$2,99</h2>
-                            <button>Add to cart</button>
-                        </div>
-                    </div>
-                    <div class="domainsection">
-                        <div class="domainname">epikdesign.co</div>
-                        <div class="domainprice">
-                            <h2>$2,99</h2>
-                            <button>Add to cart</button>
-                        </div>
-                    </div>
-                    <div class="domainsection">
-                        <div class="domainname">epikdesign.co</div>
-                        <div class="domainprice">
-                            <h2>$2,99</h2>
-                            <button>Add to cart</button>
+                            <button>Add to Cart</button>
                         </div>
                     </div>
                 </div>
                 <div class="searchfooter">
-                    <div class="select1">
-                        <select name="allcategories" id=""><h4>Display:</h4>
-                            <option value=""><h3>10 Domains per page</h3></option>
-                            <option value="">20 Domains per page</option>
-                            <option value="">50 Domains per page</option>
+                    <div class="select3">
+                        <select name="allcategories" id="" width="274"><h4>Display:</h4>
+                            <option value=""><h4>Display:</h4>10 Domains per page</option>
+                            <option value=""><h4>Display:</h4>20 Domains per page</option>
+                            <option value=""><h4>Display:</h4>50 Domains per page</option>
                         </select>
                     </div>
                     <div class="pagination">
@@ -277,9 +324,10 @@
                     </div>
                 </div>
             </div>
-           
-        </div>
-        <div class="payment">
+        
+
+    </div>
+    <div class="payment">
             <h1>Easily Pay and Buy with major payment methods </h1>
             <div class="paymentmeth">
                 <div class="onemeth"><img src="img/bitcoin.svg" alt=""><h3>Crypto</h3></div>
@@ -291,13 +339,12 @@
                 <div class="onemeth"><img src="img/alipay.svg" alt=""><h3>AliPay</h3></div>
             </div>
         </div>
-
     </div>
-</zcontent>
+</div>
             <footer class="footer">
-    <div class="wrapper">
+   
         <div class="upbg">
-            <div class="wrapper">
+            
                 <div class="footwr1">
                     <h2>Legendary Customer Support</h2>
                     <h1>(888) 894-9026</h1>
@@ -309,13 +356,13 @@
                     </div>
                 </div>
 
-            </div>
+            
         </div>
         <div class="midbg">
-            <div class="wrapper">
-                <div class="wrapper2">
+            <div class="wrapper8">
+                
                     <div class="midftext">
-                        <h3>MY DOMAINS</h3> <p>Manage My Domains</p> <p>Domain Registration</p>
+                        <h3>MY DOMAINS</h3> <p>Manage My Domains</p> <p>Domain Registration</p> <p>WHOIS</p>
                     </div>
                     <div class="midftext2">
                         <h3>TRANSFERS</h3> <p>Transfer Into Portfolio</p> <p>Transfer To Another Registrar</p> <p>Get Transfer Status</p>
@@ -323,23 +370,25 @@
                     <div class="midftext3">
                         <h4>Universal TOS</h4> <h4>Refund Policy</h4> <h4>Registrant Rights</h4> <h4>Registration Agreement</h4> <h4>Privacy Policy</h4>
                     </div>
-            </div>
+            
+        </div>
         </div>
         <div class="downbg">
-            <div class="wrapper">
+            
                 <div class="downfoot">
                     <div class="footerpics">
-                        <img src="img/foot1.svg" alt="">
+                        <img src="img/foot1.svg" alt="" width="214" height="46">
                         <img src="img/foot2.svg" alt="">
                         <img src="img/foot3.svg" alt="">
                     </div>
                     <p>Epic&#174; is a registered trademark of Epic Inc. Copyright&copy; 2020 by Epik Ink.All rights reserved. </p>
                     <p>WHOIS Privacy services Provided by Anonymize.com</p>
                 </div>
-            </div>
+            
         </div>
-    </div>
+    
 </footer>
         </div>
+        <script src="js/script.js"></script>
 </body>
 </html>

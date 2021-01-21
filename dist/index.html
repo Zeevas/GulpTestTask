@@ -5,16 +5,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
         <title>Homepage</title>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+       
     </head>
     <body>
         <div>
-            <header class="header">
-    <div class="wrapper1">
-    <div class="logo">
+            <div class="wrapper">
+<header class="header">
+    
+    <a href="index.html" class="logo">
         <img src="img/logo.svg">
         <p>All.ca</p>
+    </a>
+    <div class="header__burger">
+        <span></span>
     </div>
-    <div class="nav">
+   
+    <div class="navig">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="#CAregistration">.CA Registration</a></li>
@@ -22,52 +29,70 @@
             <li><a href="#tld">TLDs</a></li>
             <li><a href="#support">Support</a></li>
             <li><a href="#about">About</a></li>
-            <div class="dropdown-content">Coming soon...</div>
+            
         </ul> 
+        <div class="signreg">
+        <button class="button button1"> Sign in / Register</button>
+        
     </div>
-    <div >
-        <button class="button" type="button"> Sign in / Register</button>
-        <div class="dropdown-content">Coming soon...</div>
     </div>
-</div>
+    
 </header>
-            <content class="content">
+
+    
+</div>
+<nav class="header__menu">
+        <ul class="header__list">
+            <li><a class="header__link" href="index.html">Home</a></li>
+            <li><a class="header__link" href="#CAregistration">.CA Registration</a></li>
+            <li><a class="header__link" href="#transfers">Transfers</a></li>
+            <li><a class="header__link" href="#tld">TLDs</a></li>
+            <li><a class="header__link" href="#support">Support</a></li>
+            <li><a class="header__link" href="#about">About</a></li>
+            
+        </ul> 
+    </nav>
+            <div class="content">
     <div class="wrapper">
         <div class="hero">
             <div class="infohero">
                 <h1>Choose to be Canadian</h1>
                 <h2>Register .CA</h2>
-                <div class="inbtn"><input type="text" size="50" placeholder="Start here by typing a domain name or a keyword">
-                <a href="searchResult.html"><button><img src="img/btnsearch.svg" alt=""> Search Domains</button></a></div>
+                <div class="inbtn">
+                    <input type="text" size="50" placeholder="Start here by typing a domain name or a keyword">
+                    <a href="searchResult.html">
+                        <div class="btn1"><img src="img/btnsearch.svg" alt=""> 
+                    <h4>Search Domains</h4></div></a>
+                </div>
                 
-                <h4>We are the Canadian Internet Registretion Authority.We manage .CA domains on behalf of all Canadians and work every day to build a better online Canada.</h4>
+                <h4>We are the Canadian Internet Registretion Authority. We manage .CA domains on behalf of all Canadians and work every day to build a better online Canada.</h4>
             </div>
             <div class="pichero">
                 <img src="img/BG.svg" alt="">
             </div>
         </div>
         <div class="promos">
-            <div class="wrapper5">
+            
                 <div class="promohead">
                     <h1>Popular Domain Name Promos & Offers</h1><br>
                     <h3>Register cheap domains at the best prices you can find on the internet</h3>
                 </div>
                 <div class="domains">
-                    <div class="promo"><h4>POPULAR</h4><h1>.com</h1><br><p>$8.49</p></div>
-                    <div class="promo"><h4>NEW</h4><h1>.net</h1><br><p>$8.49</p></div>
-                    <div class="promo"><h4>ENDING SOON</h4><h1>.xyz</h1><br><p>$8.49</p></div>
-                    <div class="promo"><h1>.org</h1><br><p>$8.49</p></div>
-                    <div class="promo"><h1>.art</h1><br><p>$8.49</p></div>
-                    <div class="promo"><h1>.info</h1><br><p>$8.49</p></div>
-                    <div class="promo"><h1>.fund</h1><br><p>$8.49</p></div>
-                    <div class="promo"><h1>.zone</h1><br><p>$8.49</p></div>
-                    <div class="promo"><h1>.today</h1><br><p>$8.49</p></div>
-                    <div class="promo"><h1>.rocks</h1><br><p>$8.49</p></div>
-                    <div class="promo"><h1>.expert</h1><br><p>$8.49</p></div>
-                    <div class="promo"><h1>.city</h1><br><p>$8.49</p></div>
+                    <div class="promo"><h4>POPULAR</h4><h2>.com</h2><br><h3>$8.49</h3></div>
+                    <div class="promo"><h4>NEW</h4><h2>.net</h2><br><h3>$8.49</h3></div>
+                    <div class="promo"><h5>ENDING SOON</h5><h2>.xyz</h2><br><h3>$8.49</h3></div>
+                    <div class="promo"><h1>.org</h1><br><h3>$8.49</h3></div>
+                    <div class="promo"><h1>.art</h1><br><h3>$8.49</h3></div>
+                    <div class="promo"><h1>.info</h1><br><h3>$8.49</h3></div>
+                    <div class="promo"><h1>.fund</h1><br><h3>$8.49</h3></div>
+                    <div class="promo"><h1>.zone</h1><br><h3>$8.49</h3></div>
+                    <div class="promo"><h1>.today</h1><br><h3>$8.49</h3></div>
+                    <div class="promo"><h1>.rocks</h1><br><h3>$8.49</h3></div>
+                    <div class="promo"><h1>.expert</h1><br><h3>$8.49</h3></div>
+                    <div class="promo"><h1>.city</h1><br><h3>$8.49</h3></div>
                 </div>
                 <div class="allpromos">View All Domain Extetions ></div>
-            </div>
+            
             
         </div>
         <div class="section1">
@@ -85,12 +110,12 @@
                 <p>Whois privacy can protect you against identity theft, spammers, hackers and other threats on the web. Every domain registered with us gets the Whois privacy service at no extra charge!</p>
             </div>
         </div>
-        <div class="wrapper">
+        
             <div class="features">
-                <div class="wrapper">
+                
                 <div class="ftitle">
                     <h3>FEATURES</h3><br>
-                    <h1>Why register with All.CA</h1>
+                    <h1>Why Register with All.CA</h1>
                 </div>
                 <div class="feat">
                     <div class="onefeat">
@@ -114,10 +139,10 @@
                         <p>Better a diamond with a flaw than a pebble without one.</p>
                     </div>
                 </div>
-                </div>
+                
             </div>
             <div class="hero2">
-                <div class="wrapper7">
+                
                     <div class="info2">
                         <h3>Unparalleled Personal Support</h3>
                         <p>When you contact us, you get quick and direct access to our knowledgable staff with no long hold times. Get the answers you want without the hassle!</p>
@@ -125,9 +150,9 @@
                     <div class="pic2">
                         <img src="img/hero2.svg" alt="">
                     </div>
-                </div>
+                
             </div>
-        </div>
+        
         <div >
             <div class="revtitle">
                 <h1>We Are Loved By Users And Clients Worldwide</h1>
@@ -135,7 +160,7 @@
             </div>
             
         </div>
-        <div class="wrapper">
+        
             <div class="reviews">
                 <div class="rev">
                     <img src="img/stars.svg" alt="">
@@ -162,16 +187,16 @@
                     <h5>Product Designer @Apex</h5>
                 </div>
             </div>
-       </div>
+       
         
 
     </div>
 
-</content>
+</div>
             <footer class="footer">
-    <div class="wrapper">
+   
         <div class="upbg">
-            <div class="wrapper">
+            
                 <div class="footwr1">
                     <h2>Legendary Customer Support</h2>
                     <h1>(888) 894-9026</h1>
@@ -183,13 +208,13 @@
                     </div>
                 </div>
 
-            </div>
+            
         </div>
         <div class="midbg">
-            <div class="wrapper">
-                <div class="wrapper2">
+            <div class="wrapper8">
+                
                     <div class="midftext">
-                        <h3>MY DOMAINS</h3> <p>Manage My Domains</p> <p>Domain Registration</p>
+                        <h3>MY DOMAINS</h3> <p>Manage My Domains</p> <p>Domain Registration</p> <p>WHOIS</p>
                     </div>
                     <div class="midftext2">
                         <h3>TRANSFERS</h3> <p>Transfer Into Portfolio</p> <p>Transfer To Another Registrar</p> <p>Get Transfer Status</p>
@@ -197,24 +222,25 @@
                     <div class="midftext3">
                         <h4>Universal TOS</h4> <h4>Refund Policy</h4> <h4>Registrant Rights</h4> <h4>Registration Agreement</h4> <h4>Privacy Policy</h4>
                     </div>
-            </div>
+            
+        </div>
         </div>
         <div class="downbg">
-            <div class="wrapper">
+            
                 <div class="downfoot">
                     <div class="footerpics">
-                        <img src="img/foot1.svg" alt="">
+                        <img src="img/foot1.svg" alt="" width="214" height="46">
                         <img src="img/foot2.svg" alt="">
                         <img src="img/foot3.svg" alt="">
                     </div>
                     <p>Epic&#174; is a registered trademark of Epic Inc. Copyright&copy; 2020 by Epik Ink.All rights reserved. </p>
                     <p>WHOIS Privacy services Provided by Anonymize.com</p>
                 </div>
-            </div>
+            
         </div>
-    </div>
+    
 </footer>
         </div>
-       
+        <script src="js/script.js"></script>
     </body>
 </html>
